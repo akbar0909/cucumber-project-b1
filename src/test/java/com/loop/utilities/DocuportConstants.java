@@ -3,6 +3,7 @@ package com.loop.utilities;
 public class DocuportConstants {
 
     public static final String USERNAME_CLIENT = "b1g1_client@gmail.com";
+    public static final String USERNAME_ADMIN = "b1g1_supervisor@gmail.com";
     public static final String USERNAME_ADVISER = "b1g1_advisor@gmail.com";
     public static final String PASSWORD_CLIENT = "Group1";
     public static final String PASSWORD_ADVISOR = "Group1";
