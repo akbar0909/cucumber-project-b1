@@ -7,8 +7,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {"html:target/html-reports/cucumber-reports.html",
+                   "json:target/json reports/json-report"  },
         features = "src/test/resources/features",
-        glue = "com/loop/step_definition"
+        glue = "com/loop/step_definition",
+        dryRun = false,
+        tags = "@smoke",
+        monochrome = true
+
 )
 
 
