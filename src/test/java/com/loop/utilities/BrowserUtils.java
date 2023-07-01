@@ -1,9 +1,7 @@
 package com.loop.utilities;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import io.cucumber.java.Scenario;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,6 +12,20 @@ import java.util.Set;
 import static org.testng.Assert.assertTrue;
 
 public class BrowserUtils {
+
+
+    public static Scenario myScenario;
+    public static void takeScreenshot(){
+        try {
+            myScenario.log("Current url is: " + Driver.getDriver().getCurrentUrl());
+            final byte[] screenshot = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            myScenario.attach(screenshot, "image/png", myScenario.getName());
+        } catch (WebDriverException wbd){
+            wbd.getMessage();
+        } catch (ClassCastException cce){
+            cce.getMessage();
+        }
+    }
 
 
     /**
@@ -58,7 +70,7 @@ public class BrowserUtils {
     /**
      * @param driver
      * @param expectedTitle returns void, assertion is implemented
-     * @authot akbar
+     * @authot akb
      */
     public static void validateTitle(WebDriver driver, String expectedTitle) {
         assertTrue(driver.getTitle().contains(expectedTitle));
@@ -67,7 +79,7 @@ public class BrowserUtils {
     /**
      * @param nameOfthePage from loop practice page
      *                      once you on the page call it
-     * @aothor akber
+     * @aothor akb
      */
     public static void loopLinkClick(String nameOfthePage) {
         WebElement element = Driver.getDriver().findElement(By.xpath("//a[.='" + nameOfthePage + "']"));
@@ -80,7 +92,7 @@ public class BrowserUtils {
      * Moves the mouse to given element
      *
      * @param element on which to hover
-     * @author akbar
+     * @author akb
      */
     public static void hover(WebElement element) {
         Actions actions = new Actions(Driver.getDriver());
@@ -91,7 +103,7 @@ public class BrowserUtils {
      * Scrolls down to an element using JavaScript
      *
      * @param element
-     * @author akbar
+     * @author akb
      */
     public static void scrollToElement(WebElement element) {
         ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
@@ -101,7 +113,7 @@ public class BrowserUtils {
      * Clicks on an element using JavaScript
      *
      * @param element
-     * @author akbar
+     * @author akb
      */
     public static void clickWithJS(WebElement element) {
         ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
@@ -112,7 +124,7 @@ public class BrowserUtils {
      * Performs double click action on an element
      *
      * @param element
-     * @author akbar
+     * @author akb
      */
     public static void doubleClick(WebElement element) {
         new Actions(Driver.getDriver()).doubleClick(element).build().perform();
@@ -124,7 +136,7 @@ public class BrowserUtils {
      * @param element
      * @param timeToWaitInSec
      * @return
-     * @author akbar
+     * @author akb
      */
     public static WebElement waitForVisibility(WebElement element, int timeToWaitInSec) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeToWaitInSec));
@@ -137,7 +149,7 @@ public class BrowserUtils {
      * @param element
      * @param timeToWaitInSec
      * @return
-     * @author akbar
+     * @author akb
      */
     public static void waitForInVisibility(WebElement element, int timeToWaitInSec) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeToWaitInSec));
@@ -150,7 +162,7 @@ public class BrowserUtils {
      * @param element
      * @param timeout
      * @return
-     * @author akbar
+     * @author akb
      */
     public static WebElement waitForClickable(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
@@ -161,7 +173,7 @@ public class BrowserUtils {
      * performs a pause
      *
      * @param seconds
-     * @author nsh
+     * @author akb
      */
     public static void justWait(int seconds) {
         try {
@@ -170,6 +182,7 @@ public class BrowserUtils {
             e.printStackTrace();
         }
     }
+
 
     public static void selectCheckBox(WebElement element, boolean check) {
         if (check) {
@@ -181,6 +194,8 @@ public class BrowserUtils {
                 element.click();
             }
         }
+
+
     }
 }
 
