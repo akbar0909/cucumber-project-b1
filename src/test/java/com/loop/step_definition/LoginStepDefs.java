@@ -9,8 +9,9 @@ import com.loop.utilities.ConfigurationReader;
 import com.loop.utilities.DocuportConstants;
 import com.loop.utilities.Driver;
 import io.cucumber.java.en.*;
-import io.cucumber.java.sl.In;
 import org.testng.Assert;
+
+import java.util.Map;
 
 public class LoginStepDefs {
 
@@ -26,8 +27,8 @@ public class LoginStepDefs {
     }
     @When("user enters username for client")
     public void user_enters_username_for_client()throws InterruptedException {
-        BrowserUtils.waitForClickable(loginpage.loginInput,10);
-        loginpage.loginInput.sendKeys(DocuportConstants.USERNAME_CLIENT);
+        BrowserUtils.waitForClickable(loginpage.usernameInput,10);
+        loginpage.usernameInput.sendKeys(DocuportConstants.USERNAME_CLIENT);
     }
 
     @When("user enters password for client")
@@ -40,17 +41,16 @@ public class LoginStepDefs {
         loginpage.loginButton.click();
     }
     @Then("user should see the home page for client")
-    public void user_should_see_the_home_page_for_client() throws InterruptedException{
+    public void user_should_see_the_home_page_for_client(){
 
         //Assert.assertTrue(loginpage.homeButton.isDisplayed(), "HOME PAGE IS NOT DISPLAYED");
 
     }
 
-
     @When("user enters username for employee")
     public void user_enters_username_for_employee() throws InterruptedException{
-        BrowserUtils.waitForClickable(loginpage.loginInput,10);
-        loginpage.loginInput.sendKeys(DocuportConstants.USERNAME_EMPLOYEE);
+        BrowserUtils.waitForClickable(loginpage.usernameInput,10);
+        loginpage.usernameInput.sendKeys(DocuportConstants.USERNAME_EMPLOYEE);
     }
     @When("user enters password for employee")
     public void user_enters_password_for_employee() {
@@ -64,8 +64,8 @@ public class LoginStepDefs {
 
     @When("user enters username for adviser")
     public void user_enters_username_for_adviser()throws InterruptedException {
-        BrowserUtils.waitForClickable(loginpage.loginInput,10);
-        loginpage.loginInput.sendKeys(DocuportConstants.USERNAME_ADVISER);
+        BrowserUtils.waitForClickable(loginpage.usernameInput,10);
+        loginpage.usernameInput.sendKeys(DocuportConstants.USERNAME_ADVISER);
     }
     @When("user enters password for adviser")
     public void user_enters_password_for_adviser() {
@@ -79,8 +79,8 @@ public class LoginStepDefs {
     }
     @When("user enters username for admin")
     public void user_enters_username_for_admin()throws InterruptedException {
-        BrowserUtils.waitForClickable(loginpage.loginInput,10);
-        loginpage.loginInput.sendKeys(DocuportConstants.USERNAME_ADMIN);
+        BrowserUtils.waitForClickable(loginpage.usernameInput,10);
+        loginpage.usernameInput.sendKeys(DocuportConstants.USERNAME_ADMIN);
     }
     @When("user enters password for admin")
     public void user_enters_password_for_admin() {
@@ -89,19 +89,23 @@ public class LoginStepDefs {
     @Then("user should see the home page for admin")
     public void user_should_see_the_home_page_for_admin() {
         Assert.assertTrue(loginpage.homeButton.isDisplayed(), "HOME PAGE NOT DISPLAYED");
-
-
-
     }
-
-
     @Then("user validates that login button is displayed")
     public void userValidatesThatLoginButtonIsDisplayed() {
         Assert.assertTrue(loginpage.loginButton.isDisplayed());
     }
-
     @Then("user validates that password field is displayed")
     public void userValidatesThatPasswordFieldIsDisplayed() {
         Assert.assertTrue(loginpage.loginButton.isDisplayed());
     }
+
+    @When("user enters credentials")
+    public void user_enters_credentials(Map< String, String> credentials) {
+        loginpage.loginDocuport(credentials.get("username"), credentials.get("password"));
+
+
+    }
+
+
+
 }
