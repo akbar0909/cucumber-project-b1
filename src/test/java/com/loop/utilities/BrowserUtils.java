@@ -7,7 +7,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import static org.testng.Assert.assertTrue;
 
@@ -181,6 +184,25 @@ public class BrowserUtils {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+    public static List<String> getElementsText(List<WebElement> elements){
+        List <String> elementsText = new ArrayList<>();
+        for (WebElement element : elements){
+            elementsText.add(element.getText());
+        }
+        return elementsText;
+    }
+
+    public static List<String> getElementsTextWithStream (List<WebElement> elements){
+        return elements.stream()
+                .map(x->x.getText())
+                .collect(Collectors.toList());
+    }
+
+    public static List<String> getElementsTextWithStream2 (List<WebElement> elements){
+        return elements.stream()
+                .map(WebElement::getText)
+                .collect(Collectors.toList());
     }
 
 
