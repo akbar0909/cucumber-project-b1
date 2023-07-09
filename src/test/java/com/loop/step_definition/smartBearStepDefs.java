@@ -2,6 +2,7 @@ package com.loop.step_definition;
 import com.loop.pages.SmartBearBasePage;
 import com.loop.pages.SmartBearLoginPage;
 import com.loop.pages.SmartBearOrderPage;
+import com.loop.utilities.BrowserUtils;
 import com.loop.utilities.ConfigurationReader;
 import com.loop.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -98,17 +99,16 @@ public class smartBearStepDefs extends SmartBearBasePage {
 
     }
     @When("user enters process order button")
-    public void user_enters_process_order_button() throws InterruptedException {
-        Thread.sleep(3000);
-        orderPage.processButton.click();
+    public void user_enters_process_order_button()  {
+
+      orderPage.processButton.click();
 
     }
     @Then("user should see {string} in the first row of the table")
-    public void user_should_see_in_the_first_row_of_the_table(String name) throws InterruptedException{
-        Thread.sleep(3000);
+    public void user_should_see_in_the_first_row_of_the_table(String name) {
 
         orderPage.viewAllOrders.click();
-        Assert.assertEquals(orderPage.customerName.getText(), name);
+        Assert.assertEquals(orderPage.name.getText(), name);
 
     }
 

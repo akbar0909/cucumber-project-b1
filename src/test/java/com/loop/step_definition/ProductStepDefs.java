@@ -38,8 +38,8 @@ public class ProductStepDefs {
 
     }
 
-    @Then("User should be able to see expected prices in following products with listOflist")
-    public void user_should_be_able_to_see_expected_prices_in_following_products_with_list_oflist(List<List<String>>  productDetails) {
+    @Then("User should be able to see expected prices in following products with listlist")
+    public void user_should_be_able_to_see_expected_prices_in_following_products_with_list_list(List<List<String>>  productDetails) {
 
 
 

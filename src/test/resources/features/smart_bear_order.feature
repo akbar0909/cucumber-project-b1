@@ -1,6 +1,6 @@
 Feature: practice smart bear
 
- // @wip
+@first
   Scenario: user should be bale to place order and order should be seen in page
     Given user is already logged in and navigated to order page
     When user selects product type "FamilyAlbum"

@@ -9,7 +9,8 @@ import com.loop.utilities.ConfigurationReader;
 import com.loop.utilities.DocuportConstants;
 import com.loop.utilities.Driver;
 import io.cucumber.java.en.*;
-import org.testng.Assert;
+import org.junit.Assert;
+
 
 import java.util.Map;
 
@@ -27,7 +28,7 @@ public class LoginStepDefs {
     }
     @When("user enters username for client")
     public void user_enters_username_for_client()throws InterruptedException {
-        BrowserUtils.waitForClickable(loginpage.usernameInput,10);
+        BrowserUtils.waitForClickable(loginpage.usernameInput,3);
         loginpage.usernameInput.sendKeys(DocuportConstants.USERNAME_CLIENT);
     }
 
@@ -37,7 +38,7 @@ public class LoginStepDefs {
         loginpage.passwordInput.sendKeys(DocuportConstants.PASSWORD);}
     @When("user clicks login button")
     public void user_clicks_login_button()throws InterruptedException {
-        BrowserUtils.waitForClickable(loginpage.loginButton,5);
+        BrowserUtils.waitForClickable(loginpage.loginButton,3);
         loginpage.loginButton.click();
     }
     @Then("user should see the home page for client")
@@ -88,7 +89,7 @@ public class LoginStepDefs {
     }
     @Then("user should see the home page for admin")
     public void user_should_see_the_home_page_for_admin() {
-        Assert.assertTrue(loginpage.homeButton.isDisplayed(), "HOME PAGE NOT DISPLAYED");
+        Assert.assertTrue("HOME PAGE NOT DISPLAYED", loginpage.homeButton.isDisplayed());
     }
     @Then("user validates that login button is displayed")
     public void userValidatesThatLoginButtonIsDisplayed() {
@@ -96,12 +97,21 @@ public class LoginStepDefs {
     }
     @Then("user validates that password field is displayed")
     public void userValidatesThatPasswordFieldIsDisplayed() {
+
         Assert.assertTrue(loginpage.loginButton.isDisplayed());
     }
 
     @When("user enters credentials")
     public void user_enters_credentials(Map< String, String> credentials) {
+        for(Map.Entry<String, String> entry : credentials.entrySet()){
+            String key =entry.getKey();
+            System.out.println("key = " +key);
+            String value =entry.getValue();
+            System.out.println("value = " + value);
+        }
         loginpage.loginDocuport(credentials.get("username"), credentials.get("password"));
+
+
 
 
     }
