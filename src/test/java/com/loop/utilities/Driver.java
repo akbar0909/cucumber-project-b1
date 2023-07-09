@@ -9,9 +9,11 @@ import java.time.Duration;
 
 public class Driver {
 
+
     /*
     Creating the private constructor so this class's object is not reachable from outside
      */
+
     private Driver(){
     }
 
@@ -20,9 +22,11 @@ public class Driver {
     Static - run before everything else and also use in static method
      */
 
+
     // private static WebDriver driver;
     // implemented threadLocal to achieve multiThread locally, we created pool of drivers
     private static InheritableThreadLocal <WebDriver> driverPool = new InheritableThreadLocal<>();
+
 
 
     /*
@@ -34,12 +38,15 @@ public class Driver {
      * @return driver
      * @author nsh
      */
+
     public static WebDriver getDriver(){
         if(driverPool.get()==null){
+
             String browserType = ConfigurationReader.getProperty("browser");
             switch (browserType.toLowerCase()){
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
+
                     driverPool.set(new ChromeDriver());
                     driverPool.get().manage().window().maximize();
                     driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -53,12 +60,14 @@ public class Driver {
             }
         }
         return driverPool.get();
+
     }
 
     /**
      * closing driver
      * @author nsh
      */
+
     public static void closeDriver (){
         if(driverPool.get() !=null){
             driverPool.get().quit();
@@ -66,3 +75,4 @@ public class Driver {
         }
     }
 }
+
