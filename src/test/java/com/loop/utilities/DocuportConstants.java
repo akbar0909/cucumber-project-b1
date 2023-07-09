@@ -49,6 +49,7 @@ public class DocuportConstants {
 
     public static final String EXPECTED_ADVISOR_ROLE = "Advisor";
 
+
     public static final String FIRST_NAME = "Ako";
     public static final String LAST_NAME = " Ab";
     public static final String Owner = "AK.AB";
@@ -64,6 +65,7 @@ public class DocuportConstants {
     public static final String STATE = "VA";
 
     public static final String ZIP_CODE = "+12345";
+
 
 
 

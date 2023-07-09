@@ -1,13 +1,21 @@
 package com.loop.utilities;
 
+
 import io.cucumber.java.Scenario;
 import org.junit.Assert;
 import org.openqa.selenium.*;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -15,7 +23,13 @@ import java.util.stream.Collectors;
 
 
 
+import java.util.Set;
+
+
+
+
 public class BrowserUtils {
+
 
 
     public static Scenario myScenario;
@@ -30,6 +44,7 @@ public class BrowserUtils {
             cce.getMessage();
         }
     }
+
 
 
     /**
@@ -52,7 +67,11 @@ public class BrowserUtils {
                 break;
             }
         }
+
         Assert.assertTrue(driver.getTitle().toLowerCase().contains(expectedTitle));
+
+
+
     }
 
 
@@ -78,12 +97,15 @@ public class BrowserUtils {
      */
     public static void validateTitle(WebDriver driver, String expectedTitle) {
         Assert.assertTrue(driver.getTitle().contains(expectedTitle));
+
+
     }
 
     /**
      * @param nameOfthePage from loop practice page
      *                      once you on the page call it
      * @aothor akb
+
      */
     public static void loopLinkClick(String nameOfthePage) {
         WebElement element = Driver.getDriver().findElement(By.xpath("//a[.='" + nameOfthePage + "']"));
@@ -186,6 +208,7 @@ public class BrowserUtils {
             e.printStackTrace();
         }
     }
+
     public static List<String> getElementsText(List<WebElement> elements){
         List <String> elementsText = new ArrayList<>();
         for (WebElement element : elements){
@@ -194,17 +217,6 @@ public class BrowserUtils {
         return elementsText;
     }
 
-    public static List<String> getElementsTextWithStream (List<WebElement> elements){
-        return elements.stream()
-                .map(x->x.getText())
-                .collect(Collectors.toList());
-    }
-
-    public static List<String> getElementsTextWithStream2 (List<WebElement> elements){
-        return elements.stream()
-                .map(WebElement::getText)
-                .collect(Collectors.toList());
-    }
 
 
     public static void selectCheckBox(WebElement element, boolean check) {
@@ -217,8 +229,6 @@ public class BrowserUtils {
                 element.click();
             }
         }
-
-
     }
 }
 

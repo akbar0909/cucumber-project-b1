@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+@smoke
+>>>>>>> master
 Feature: Docuport Login Logout Feature
 
   Background: will run for each scenario first
@@ -12,7 +16,9 @@ Feature: Docuport Login Logout Feature
     And user clicks login button
     Then user should see the home page for client
 
+
   @regression
+
   Scenario: Login as a employee
     When user enters username for employee
     And user enters password for employee
@@ -34,6 +40,7 @@ Feature: Docuport Login Logout Feature
     Then user should see the home page for admin
 
 
+
 @wip
 
   Scenario: Login as a client map practice
@@ -41,3 +48,4 @@ Feature: Docuport Login Logout Feature
       | username | b1g1_client@gmail.com |
       | password | Group1                |
     Then user should see the home page for client
+
