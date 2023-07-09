@@ -34,7 +34,7 @@ Feature: Docuport Login Logout Feature
     Then user should see the home page for admin
 
 
-
+@wip
 
   Scenario: Login as a client map practice
     When user enters credentials

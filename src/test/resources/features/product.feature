@@ -1,6 +1,5 @@
 Feature: product data table practice
 
-
   Scenario: verify each product price
 #    practice List<Map<String,String>>
     Given User is on the HomePage
@@ -30,7 +29,7 @@ Feature: product data table practice
       | Monitors | ASUS Full HD      | 230 |
 
 
-  @wip
+
   Scenario: Verify students name in discord
     Then User should be able to see following names in their groups
       | Group1 | Ilgar  | Natalia | Nadir  |

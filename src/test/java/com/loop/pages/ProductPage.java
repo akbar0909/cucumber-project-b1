@@ -13,7 +13,7 @@ public class ProductPage {
         Driver.getDriver().findElement(By.xpath("//a[.='" + category + "']")).click();
     }
 
-    public String getProductPrice(String product){
+    public String getProductPrice(String product) {
         String actualPrice = Driver.getDriver().findElement(By.xpath("//a[normalize-space(.)='" + product + "']/../../h5")).getText();
         return actualPrice.substring(1);
     }

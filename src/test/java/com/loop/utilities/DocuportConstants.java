@@ -49,6 +49,24 @@ public class DocuportConstants {
 
     public static final String EXPECTED_ADVISOR_ROLE = "Advisor";
 
+    public static final String FIRST_NAME = "Ako";
+    public static final String LAST_NAME = " Ab";
+    public static final String Owner = "AK.AB";
+    public static final String Email_ADDRES = "n.b@gmail.com";
+
+    public static final String PHONE_NUM = "+123 456 78 93";
+    public static final String Collaborators= "+123 456 78 93";
+
+    public static final String ADDRESS1_ = "165 Maple avenue";
+    public static final String ADDRESS2 = "163 Maple avenue";
+
+    public static final String CITY = "Fairfax";
+    public static final String STATE = "VA";
+
+    public static final String ZIP_CODE = "+12345";
+
+
+
 
 
 

@@ -68,6 +68,11 @@ public class SmartBearOrderPage extends SmartBearBasePage{
     @FindBy(xpath = "//a[contains(text(),'Order')]")
     public WebElement orderHeading;
 
+    @FindBy(xpath = "/html/body/form/table/tbody/tr/td[2]/div[2]/div[3]/table/tbody/tr[2]/td[2]")
+    public WebElement name;
+
+
+
 
 
 

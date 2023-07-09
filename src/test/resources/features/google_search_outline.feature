@@ -1,5 +1,6 @@
 Feature: Scenario outline: practice
 
+@akb
   Scenario Outline:  Google search for capital cities
     Given user is on Google search page
     When user searches for the "<country>"

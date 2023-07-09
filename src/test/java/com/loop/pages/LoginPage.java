@@ -20,8 +20,9 @@ public class LoginPage extends SmartBearBasePage {
     @FindBy(className = "v-btn__content")
     public WebElement loginButton;
 
-    @FindBy (xpath = "//span[contains(text(),'Batch1 Group1')]")
+    @FindBy (xpath = "//span[.=' Continue ']")
     public WebElement homeButton;
+
 
     /**
      * logins to docuport
@@ -32,13 +33,14 @@ public class LoginPage extends SmartBearBasePage {
      */
 
     public void loginDocuport(String username, String password){
-        BrowserUtils.waitForVisibility(usernameInput, 5);
+        BrowserUtils.waitForVisibility(usernameInput, 15);
         usernameInput.clear();
         usernameInput.sendKeys(username);
         passwordInput.clear();
         passwordInput.sendKeys(password);
-        BrowserUtils.waitForClickable(loginButton, 5);
+        BrowserUtils.waitForClickable(loginButton, 15);
         BrowserUtils.clickWithJS(loginButton);
+        BrowserUtils.clickWithJS(homeButton);
     }
 
 

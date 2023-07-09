@@ -1,6 +1,7 @@
 package com.loop.utilities;
 
 import io.cucumber.java.Scenario;
+import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,7 +13,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static org.testng.Assert.assertTrue;
+
 
 public class BrowserUtils {
 
@@ -51,7 +52,7 @@ public class BrowserUtils {
                 break;
             }
         }
-        assertTrue(driver.getTitle().toLowerCase().contains(expectedTitle));
+        Assert.assertTrue(driver.getTitle().toLowerCase().contains(expectedTitle));
     }
 
 
@@ -76,7 +77,7 @@ public class BrowserUtils {
      * @authot akb
      */
     public static void validateTitle(WebDriver driver, String expectedTitle) {
-        assertTrue(driver.getTitle().contains(expectedTitle));
+        Assert.assertTrue(driver.getTitle().contains(expectedTitle));
     }
 
     /**
