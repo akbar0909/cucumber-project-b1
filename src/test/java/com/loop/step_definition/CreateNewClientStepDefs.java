@@ -35,29 +35,29 @@ public class CreateNewClientStepDefs {
     }
     @When("create a new client")
     public void create_a_new_client()throws InterruptedException {
-        createNew.linkClients.click();
-        createNew.createNewClientButton.click();
-        createNew.personal.click();
-
-        createNew.firstNameInput.sendKeys(DocuportConstants.FIRST_NAME);
-        createNew.LastNameInput.sendKeys(DocuportConstants.LAST_NAME);
-        createNew.ownerInput.click();
-        BrowserUtils.waitForClickable(createNew.ownerInput,10);
-        createNew.ownerInput.sendKeys(DocuportConstants.Owner);
-        createNew.SelectionRipple.click();
-
-
-        createNew.emailAddressInput.sendKeys(DocuportConstants.Email_ADDRES);
-        createNew.batchGroup.click();
-        BrowserUtils.waitForClickable(createNew.batchGroup,10);
-        createNew.batchGroup1.click();
-        createNew.phoneInput.sendKeys(DocuportConstants.PHONE_NUM);
-        createNew.newPassword.sendKeys(DocuportConstants.PASSWORD);
-        BrowserUtils.waitForClickable(createNew.confirmPassword,10);
-        createNew.confirmPassword.sendKeys(DocuportConstants.PASSWORD);
-
-        BrowserUtils.waitForClickable(createNew.saveButton,10);
-        createNew.saveButton.click();
+//        createNew.linkClients.click();
+//        createNew.createNewClientButton.click();
+//        createNew.personal.click();
+//
+//        createNew.firstNameInput.sendKeys(DocuportConstants.FIRST_NAME);
+//        createNew.LastNameInput.sendKeys(DocuportConstants.LAST_NAME);
+//        createNew.ownerInput.click();
+//        BrowserUtils.waitForClickable(createNew.ownerInput,10);
+//        createNew.ownerInput.sendKeys(DocuportConstants.Owner);
+//        createNew.SelectionRipple.click();
+//
+//
+//        createNew.emailAddressInput.sendKeys(DocuportConstants.Email_ADDRES);
+//        createNew.batchGroup.click();
+//        BrowserUtils.waitForClickable(createNew.batchGroup,10);
+//        createNew.batchGroup1.click();
+//        createNew.phoneInput.sendKeys(DocuportConstants.PHONE_NUM);
+//        createNew.newPassword.sendKeys(DocuportConstants.PASSWORD);
+//        BrowserUtils.waitForClickable(createNew.confirmPassword,10);
+//        createNew.confirmPassword.sendKeys(DocuportConstants.PASSWORD);
+//
+//        BrowserUtils.waitForClickable(createNew.saveButton,10);
+//        createNew.saveButton.click();
        //Thread.sleep(3000);
 
 

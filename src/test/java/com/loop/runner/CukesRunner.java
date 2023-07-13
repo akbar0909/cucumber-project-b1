@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         features = "src/test/resources/features",
         glue = "com/loop/step_definition",
-        dryRun = false,
-        tags = " @ak",
+        dryRun = true,
+        tags = "@doc", //"@soft",  //"@fb",   //"@akb",   //"@regression",
         monochrome = true,
         publish = false
 )

@@ -1,20 +1,17 @@
 package com.loop.step_definition;
 
 
-import com.loop.utilities.BrowserUtils;
 
+import com.loop.utilities.BrowserUtils;
 import com.loop.utilities.Driver;
-import org.junit.After;
-import org.junit.Before;
-import io.cucumber.java.Scenario;
 import io.cucumber.java.*;
+import io.cucumber.java.Scenario;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
-
 
     private static final Logger LOG = LogManager.getLogger();
 
@@ -34,9 +31,7 @@ public class Hooks {
             final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());
         }
-        Driver.closeDriver();
+       // Driver.closeDriver();
         LOG.info("...........END AUTOMATION.......LOOP ACADEMY.....");
-
-
     }
 }

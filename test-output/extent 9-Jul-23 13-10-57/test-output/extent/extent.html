@@ -1,0 +1,1884 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 9, 2023 01:10:57 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@soft</a><a class="dropdown-item" href="#">@akb</a><a class="dropdown-item" href="#">@wip</a><a class="dropdown-item" href="#">@first</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@ak</a><a class="dropdown-item" href="#">@regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create a new client</p>
+            <p class="text-sm">
+              <span>13:10:57 PM</span> / <span>00:14:403</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Create a new client</h5>
+<span class='badge badge-success'>07.09.2023 13:10:57</span>
+<span class='badge badge-danger'>07.09.2023 13:11:11</span>
+<span class='badge badge-default'>00:14:403</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"> User Story: User story: As a user, when I am on adviser of the the system
+I should be able to create a new client and validate that new client created.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login as a adviser create a new client</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.CreateNewClientStepDefs.login_as_an_advisor(io.cucumber.datatable.DataTable)">
+                <span>Given login as an advisor</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>b1g1_advisor@gmail.com</td></tr><tr><td>password</td><td>Group1</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.loop.step_definition.CreateNewClientStepDefs.create_a_new_client()">
+                <span>When create a new client</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='input-237']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdf15b89fb773ed6741c1abe41c32898, findElement {using=xpath, value=//input[@id='input-237']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\akbar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64398/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cdf15b89fb773ed6741c1abe41c32898
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy39.sendKeys(Unknown Source)
+	at com.loop.step_definition.CreateNewClientStepDefs.create_a_new_client(CreateNewClientStepDefs.java:50)
+	at ✽.create a new client(file:///C:/Users/akbar/IdeaProjects/cucumber-project-b1/src/test/resources/features/createNew_client.feature:11)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.CreateNewClientStepDefs.validate_that_new_client_created()">
+                <span>And validate that new client created</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.CreateNewClientStepDefs.log_out_as_an_advisor()">
+                <span>And log out as an advisor</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.CreateNewClientStepDefs.log_as_a_new_client()">
+                <span>Then log as a new client</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Passing multiple parameters to the same step</p>
+            <p class="text-sm">
+              <span>13:11:12 PM</span> / <span>00:04:765</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Passing multiple parameters to the same step</h5>
+<span class='badge badge-success'>07.09.2023 13:11:12</span>
+<span class='badge badge-danger'>07.09.2023 13:11:16</span>
+<span class='badge badge-default'>00:04:765</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Searching multiple items</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.GoogleSearchStepDefs.user_is_on_google_search_page()">
+                <span>Given user is on Google search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.GoogleSearchStepDefs.user_searches_the_following_item(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)">
+                <span>Then user searches the following item</span>
+      <div><table class='markup-table table '><tr><td>loop academy</td></tr><tr><td>java</td></tr><tr><td>selenium</td></tr><tr><td>cucumber bdd</td></tr><tr><td>sql</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Google search functionality Title Validation</p>
+            <p class="text-sm">
+              <span>13:11:16 PM</span> / <span>00:02:249</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Google search functionality Title Validation</h5>
+<span class='badge badge-success'>07.09.2023 13:11:16</span>
+<span class='badge badge-danger'>07.09.2023 13:11:19</span>
+<span class='badge badge-default'>00:02:249</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+</div>
+<div class="m-t-10 m-l-5"> User story: As a user, when I am on the Google search page
+I should be able to search whatever I want and see relevant information</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Search functionality result title validation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.GoogleSearchStepDefs.user_is_on_google_search_page()">
+                <span>Given user is on Google search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.GoogleSearchStepDefs.user_types_loop_academy_in_the_google_search_box_and_clicks_enter()">
+                <span>When user types Loop Academy in the google search box and clicks enter</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.GoogleSearchStepDefs.user_should_see_loop_academy_google_search_in_the_google_title()">
+                <span>Then user should see Loop Academy - Google Search in the google title</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Search functionality result title verification</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.GoogleSearchStepDefs.user_is_on_google_search_page()">
+                <span>Given user is on Google search page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.GoogleSearchStepDefs.user_types_in_the_google_search_box_and_click_enter(java.lang.String)">
+                <span>When user types "Loop Academy" in the google search box and click enter</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.GoogleSearchStepDefs.user_should_see_search_is_in_the_google_title(java.lang.String)">
+                <span>Then User should see "Loop Academy - Google Search" is in the google title</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Scenario outline: practice</p>
+            <p class="text-sm">
+              <span>13:11:19 PM</span> / <span>00:18:251</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Scenario outline: practice</h5>
+<span class='badge badge-success'>07.09.2023 13:11:19</span>
+<span class='badge badge-danger'>07.09.2023 13:11:37</span>
+<span class='badge badge-default'>00:18:251</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>Google search for capital cities</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Google search for capital cities</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user is on Google search page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user searches for the "Azerbaijan"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should see the "Baku" in the result</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Google search for capital cities</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user is on Google search page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user searches for the "Ukraine"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should see the "Kyiv" in the result</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Google search for capital cities</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user is on Google search page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user searches for the "Afghanistan"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should see the "Kabul" in the result</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>Google search for capital cities</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user is on Google search page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user searches for the "Turkey"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should see the "Ankara" in the result</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>Google search for capital cities</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user is on Google search page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user searches for the "USA"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user should see the "Washington, D.C." in the result</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Docuport Login Logout Feature</p>
+            <p class="text-sm">
+              <span>13:11:37 PM</span> / <span>00:01:158</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Docuport Login Logout Feature</h5>
+<span class='badge badge-success'>07.09.2023 13:11:37</span>
+<span class='badge badge-danger'>07.09.2023 13:11:38</span>
+<span class='badge badge-default'>00:01:158</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="44"><span class="badge log fail-bg mr-2">Fail</span>Login as a client</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" >
+                <span>Then user validates that login button is displayed</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.userValidatesThatPasswordFieldIsDisplayed()">
+                <span>Then user validates that password field is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_enters_username_for_client()">
+                <span>When user enters username for client</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_enters_password_for_client()">
+                <span>And user enters password for client</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_clicks_login_button()">
+                <span>And user clicks login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_should_see_the_home_page_for_client()">
+                <span>Then user should see the home page for client</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log fail-bg mr-2">Fail</span>Login as a employee</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" >
+                <span>Then user validates that login button is displayed</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.userValidatesThatPasswordFieldIsDisplayed()">
+                <span>Then user validates that password field is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_enters_username_for_employee()">
+                <span>When user enters username for employee</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_enters_password_for_employee()">
+                <span>And user enters password for employee</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_clicks_login_button()">
+                <span>And user clicks login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_should_see_the_home_page_for_employee()">
+                <span>Then user should see the home page for employee</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="60"><span class="badge log fail-bg mr-2">Fail</span>Login as a adviser</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" >
+                <span>Then user validates that login button is displayed</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.userValidatesThatPasswordFieldIsDisplayed()">
+                <span>Then user validates that password field is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_enters_username_for_adviser()">
+                <span>When user enters username for adviser</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_enters_password_for_adviser()">
+                <span>And user enters password for adviser</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_clicks_login_button()">
+                <span>And user clicks login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_should_see_the_home_page_for_adviser()">
+                <span>Then user should see the home page for adviser</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="68"><span class="badge log fail-bg mr-2">Fail</span>Login as a admin</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" >
+                <span>Then user validates that login button is displayed</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.userValidatesThatPasswordFieldIsDisplayed()">
+                <span>Then user validates that password field is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_enters_username_for_admin()">
+                <span>When user enters username for admin</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_enters_password_for_admin()">
+                <span>And user enters password for admin</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_clicks_login_button()">
+                <span>And user clicks login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_should_see_the_home_page_for_admin()">
+                <span>Then user should see the home page for admin</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="76"><span class="badge log fail-bg mr-2">Fail</span>Login as a client map practice</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" >
+                <span>Then user validates that login button is displayed</span>
+      <div>Step undefined
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.userValidatesThatPasswordFieldIsDisplayed()">
+                <span>Then user validates that password field is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_enters_credentials(java.util.Map<java.lang.String, java.lang.String>)">
+                <span>When user enters credentials</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>b1g1_client@gmail.com</td></tr><tr><td>password</td><td>Group1</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.LoginStepDefs.user_should_see_the_home_page_for_client()">
+                <span>Then user should see the home page for client</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="82"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">product data table practice</p>
+            <p class="text-sm">
+              <span>13:11:38 PM</span> / <span>00:01:455</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">product data table practice</h5>
+<span class='badge badge-success'>07.09.2023 13:11:38</span>
+<span class='badge badge-danger'>07.09.2023 13:11:39</span>
+<span class='badge badge-default'>00:01:455</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=82</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>verify each product price</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.ProductStepDefs.user_is_on_the_home_page()">
+                <span>Given User is on the HomePage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.ProductStepDefs.user_should_be_able_to_see_expected_prices_in_following_products(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)">
+                <span>Then User should be able to see expected prices in following products</span>
+      <div><table class='markup-table table '><tr><td>Category</td><td>Product</td><td>expectedPrice</td></tr><tr><td>Phones</td><td>Samsung galaxy s6</td><td>360</td></tr><tr><td>Phones</td><td>Nokia lumia 1520</td><td>820</td></tr><tr><td>Phones</td><td>Nexus 6</td><td>650</td></tr><tr><td>Laptops</td><td>Sony vaio i5</td><td>790</td></tr><tr><td>Laptops</td><td>Sony vaio i7</td><td>790</td></tr><tr><td>Laptops</td><td>MacBook air</td><td>700</td></tr><tr><td>Monitors</td><td>Apple monitor 24</td><td>400</td></tr><tr><td>Monitors</td><td>ASUS Full HD</td><td>230</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="86"><span class="badge log fail-bg mr-2">Fail</span>verify each product price listOfList</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.ProductStepDefs.user_is_on_the_home_page()">
+                <span>Given User is on the HomePage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" >
+                <span>Then User should be able to see expected prices in following products with listOflist</span>
+      <div><table class='markup-table table '><tr><td>Phones</td><td>Samsung galaxy s6</td><td>360</td></tr><tr><td>Phones</td><td>Nokia lumia 1520</td><td>820</td></tr><tr><td>Phones</td><td>Nexus 6</td><td>650</td></tr><tr><td>Laptops</td><td>Sony vaio i5</td><td>790</td></tr><tr><td>Laptops</td><td>Sony vaio i7</td><td>790</td></tr><tr><td>Laptops</td><td>MacBook air</td><td>700</td></tr><tr><td>Monitors</td><td>Apple monitor 24</td><td>400</td></tr><tr><td>Monitors</td><td>ASUS Full HD</td><td>230</td></tr></table>
+      </div>
+      <div>Step undefined
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>Verify students name in discord</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.ProductStepDefs.user_should_be_able_to_see_following_names_in_their_groups(java.util.Map<java.lang.String, java.util.List<java.lang.String>>)">
+                <span>Then User should be able to see following names in their groups</span>
+      <div><table class='markup-table table '><tr><td>Group1</td><td>Ilgar</td><td>Natalia</td><td>Nadir</td></tr><tr><td>Group2</td><td>Yuliia</td><td>Ruslan</td><td>Feyruz</td></tr><tr><td>Group3</td><td>Ismail</td><td>Javid</td><td>Loop</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="91"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">practice smart bear</p>
+            <p class="text-sm">
+              <span>13:11:39 PM</span> / <span>00:01:923</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">practice smart bear</h5>
+<span class='badge badge-success'>07.09.2023 13:11:39</span>
+<span class='badge badge-danger'>07.09.2023 13:11:41</span>
+<span class='badge badge-default'>00:01:923</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=91</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="92"><span class="badge log pass-bg mr-2">Pass</span>user should be bale to place order and order should be seen in page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_is_already_logged_in_and_navigated_to_order_page()">
+                <span>Given user is already logged in and navigated to order page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_selects_product_type(java.lang.String)">
+                <span>When user selects product type "FamilyAlbum"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_enters_quantity(java.lang.Integer)">
+                <span>And user enters quantity 2</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_enters_customer_name(java.lang.String)">
+                <span>And user enters customer name "Chuck Norris"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_enters_street(java.lang.String)">
+                <span>And user enters street "1100 Long way dr"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_enters_city(java.lang.String)">
+                <span>And user enters city "Chantilly"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_enters_state(java.lang.String)">
+                <span>And user enters state "Virginia"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_enters_zip(java.lang.String)">
+                <span>And user enters zip "22011"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_selects_credit_card_type(java.lang.String)">
+                <span>And user selects credit card type "American Express"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_enters_credit_car_number(java.lang.String)">
+                <span>And user enters credit car number "1111222233334444"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_enters_expiration_date(java.lang.String)">
+                <span>And user enters expiration date "12/25"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_enters_process_order_button()">
+                <span>And user enters process order button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.loop.step_definition.smartBearStepDefs.user_should_see_in_the_first_row_of_the_table(java.lang.String)">
+                <span>Then user should see "Chuck Norris" in the first row of the table</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="106"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">sample feature to demo soft assertions</p>
+            <p class="text-sm">
+              <span>13:11:41 PM</span> / <span>00:30:906</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">sample feature to demo soft assertions</h5>
+<span class='badge badge-success'>07.09.2023 13:11:41</span>
+<span class='badge badge-danger'>07.09.2023 13:12:12</span>
+<span class='badge badge-default'>00:30:906</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=106</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="107"><span class="badge log fail-bg mr-2">Fail</span>Sample scenarios for soft assertions</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.loop.step_definition.LoginStepDefs.user_is_on_docuport_login_page()">
+                <span>Given user is on Docuport login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.loop.step_definition.LoginStepDefs.user_enters_credentials(java.util.Map<java.lang.String, java.lang.String>)">
+                <span>When user enters credentials</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>b1g1_client@gmail.com</td></tr><tr><td>password</td><td>Group1</td></tr></table>
+      </div>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@id='input-14']' (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.loop.utilities.BrowserUtils.waitForVisibility(BrowserUtils.java:169)
+	at com.loop.pages.LoginPage.loginDocuport(LoginPage.java:44)
+	at com.loop.step_definition.LoginStepDefs.user_enters_credentials(LoginStepDefs.java:127)
+	at ✽.user enters credentials(file:///C:/Users/akbar/IdeaProjects/cucumber-project-b1/src/test/resources/features/softAssert.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='input-14']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdf15b89fb773ed6741c1abe41c32898, findElement {using=xpath, value=//input[@id='input-14']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\akbar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64398/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cdf15b89fb773ed6741c1abe41c32898
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy39.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.loop.utilities.BrowserUtils.waitForVisibility(BrowserUtils.java:169)
+	at com.loop.pages.LoginPage.loginDocuport(LoginPage.java:44)
+	at com.loop.step_definition.LoginStepDefs.user_enters_credentials(LoginStepDefs.java:127)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.ClientStepDefs.user_validates_choose_account_pop_up_is_visible()">
+                <span>And user validates choose account pop up is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.loop.step_definition.ClientStepDefs.user_chooses_account_from_drop_down()">
+                <span>And user chooses account from drop down</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="112"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Wikipedia Search</p>
+            <p class="text-sm">
+              <span>13:12:12 PM</span> / <span>00:01:710</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Wikipedia Search</h5>
+<span class='badge badge-success'>07.09.2023 13:12:12</span>
+<span class='badge badge-danger'>07.09.2023 13:12:14</span>
+<span class='badge badge-default'>00:01:710</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=112</span>
+</div>
+<div class="m-t-10 m-l-5"> User Story: User story: As a user, when I am on the Wikipedia Search page
+I should be able to search whatever I want and see relevant information</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="113"><span class="badge log pass-bg mr-2">Pass</span>Wikipedia Search Functionality Title Verification</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="114"><span class="badge log pass-bg mr-2">Pass</span>Wikipedia Search Functionality Title Verification</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on Wikipedia home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User types "Steve Jobs" in the wiki search box</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks wiki search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User sees "Steve Jobs" is in the "wiki title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="119"><span class="badge log pass-bg mr-2">Pass</span>Wikipedia Search Functionality Title Verification</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on Wikipedia home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User types "Steve Jobs" in the wiki search box</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks wiki search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User sees "Steve Jobs" is in the "wiki title"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="124"><span class="badge log pass-bg mr-2">Pass</span>Wikipedia Search Functionality Title Verification</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on Wikipedia home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User types "Steve Jobs" in the wiki search box</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User clicks wiki search button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User sees "Steve Jobs" is in the "image header"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>When create a new client</a>
+<div class="">
+<span class="badge badge-default">Create a new client.Login as a adviser create a new client.When create a new client</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='106' id='109'>When user enters credentials</a>
+<div class="">
+<span class="badge badge-default">sample feature to demo soft assertions.Sample scenarios for soft assertions.When user enters credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">7</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@soft</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@soft</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='106' id='107'>Sample scenarios for soft assertions</a>
+<div class="">
+<span class="badge badge-default">sample feature to demo soft assertions.Sample scenarios for soft assertions</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">@akb</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@akb</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:11:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='23'>Google search for capital cities</a>
+<div class="">
+<span class="badge badge-default">Scenario outline: practice.Google search for capital cities</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:11:22 PM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='27'>Google search for capital cities</a>
+<div class="">
+<span class="badge badge-default">Scenario outline: practice.Google search for capital cities</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:11:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='31'>Google search for capital cities</a>
+<div class="">
+<span class="badge badge-default">Scenario outline: practice.Google search for capital cities</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:11:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='35'>Google search for capital cities</a>
+<div class="">
+<span class="badge badge-default">Scenario outline: practice.Google search for capital cities</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:11:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='39'>Google search for capital cities</a>
+<div class="">
+<span class="badge badge-default">Scenario outline: practice.Google search for capital cities</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@wip</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@wip</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='76'>Login as a client map practice</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a client map practice</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@first</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@first</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:11:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='91' id='92'>user should be bale to place order and order should be seen in page</a>
+<div class="">
+<span class="badge badge-default">practice smart bear.user should be bale to place order and order should be seen in page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='44'>Login as a client</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a client</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='52'>Login as a employee</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a employee</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='60'>Login as a adviser</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a adviser</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='68'>Login as a admin</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a admin</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='76'>Login as a client map practice</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a client map practice</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@ak</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ak</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:10:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Login as a adviser create a new client</a>
+<div class="">
+<span class="badge badge-default">Create a new client.Login as a adviser create a new client</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='44'>Login as a client</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a client</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='52'>Login as a employee</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a employee</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='60'>Login as a adviser</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a adviser</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:11:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='43' id='68'>Login as a admin</a>
+<div class="">
+<span class="badge badge-default">Docuport Login Logout Feature.Login as a admin</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 9, 2023 01:10:57 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 9, 2023 01:12:14 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>5</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='55%'>
+<b>5</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='44%'><b>4</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='63%'><b>14</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='36%'><b>8</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='62%'><b>59</b> steps passed</small></div>
+<div>
+<small data-tooltip='8%'><b>8</b> steps failed,
+<b>28</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create a new client":14.403,"Passing multiple parameters to the same step":4.765,"Google search functionality Title Validation":2.249,"Scenario outline: practice":18.251,"Docuport Login Logout Feature":1.158,"product data table practice":1.455,"practice smart bear":1.923,"sample feature to demo soft assertions":30.906,"Wikipedia Search":1.71
+};
+</script>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@soft</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@akb</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@wip</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@first</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@ak</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 5,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 14,
+failChild: 8,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 59,
+failGrandChild: 8,
+warningGrandChild: 0,
+skipGrandChild: 28,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
